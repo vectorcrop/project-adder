@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="VectorCrop - Add Projects">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme-color" content="#0134d4">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <!-- Title -->
+  <title>VectorCrop - Add Projects</title>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="icon" href="img/core-img/favicon.ico">
+  <link rel="apple-touch-icon" href="img/icons/icon-96x96.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/icons/icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="img/icons/icon-167x167.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/icons/icon-180x180.png">
+  <!-- CSS Libraries -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap-icons.css">
+  <link rel="stylesheet" href="assets/css/tiny-slider.css">
+  <link rel="stylesheet" href="assets/css/baguetteBox.min.css">
+  <link rel="stylesheet" href="assets/css/rangeslider.css">
+  <link rel="stylesheet" href="assets/css/vanilla-dataTables.min.css">
+  <link rel="stylesheet" href="assets/css/apexcharts.css">
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="assets/style.css">
+  <!-- Web App Manifest -->
+  <link rel="manifest" href="assets/manifest.json">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+  <!-- Preloader -->
+  <!-- <div id="preloader">
+    <div class="spinner-grow text-primary" role="status"><span class="visually-hidden">Loading...</span></div>
+  </div> -->
+  <!-- Internet Connection Status -->
+  <!-- # This code for showing internet connection status -->
+  <div class="internet-connection-status" id="internetStatus"></div>
+  <!-- Back Button -->
+
+  <!-- Login Wrapper Area -->
+  <div class="login-wrapper d-flex align-items-center justify-content-center">
+    <div class="container">
+      <!-- Register Form -->
+      <div class="card p-4 shadow">
+        <div class="register-form mt-4">
+          <h6 class="mb-4 text-center">Add the projects to VectorCrop</h6>
+          <form id="submit-form" action="">
+            <div class="form-group text-start mb-3">
+              <label class="form-label">Project Name</label>
+              <input class="form-control" type="text" name="project name" placeholder="Enter the project name" required>
+            </div>
+
+            <div class="form-group text-start mb-3">
+              <label class="form-label">Project URL</label>
+              <input class="form-control" type="text" name="url" placeholder="Enter the project link" required>
+            </div>
+
+            <!-- <div class="form-group text-start mb-3">
+              <label class="form-label">Project Est Date</label>
+              <input class="form-control" type="date" name="date" placeholder="Enter the project name">
+            </div> -->
+
+            <div class="form-group text-start mb-3">
+              <label class="form-label" for="defaultSelect">Select Project Type</label>
+              <select class="form-select form-control-clicked" id="defaultSelect" name="type"
+                aria-label="Default select example" required>
+                <option selected="" disabled>Select Type</option>
+                <option value="Static-website">Website - Static</option>
+                <option value="Dynamic-website">Website - Dynamic</option>
+                <option value="App">App</option>
+                <option value="UI/UX">UI/UX</option>
+                <option value="Poster">Poster</option>
+                <option value="Video">Video</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+
+
+            <label class="form-label" for="defaultSelect">Select Developers</label><br>
+            <div class="form-check form-check-inline mb-3">
+              <input class="form-check-input" id="checkedCheckbox1" name="developers" type="checkbox" value="Mishab">
+              <label class="form-check-label text-muted fw-normal" for="checkedCheckbox1">Mishab</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" id="checkedCheckbox2" name="developers" type="checkbox"
+                value="Shabeer Alavi">
+              <label class="form-check-label text-muted fw-normal" for="checkedCheckbox2">Shabeer Alavi</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" id="checkedCheckbox3" name="developers" type="checkbox" value="Gokul">
+              <label class="form-check-label text-muted fw-normal" for="checkedCheckbox3">Gokul BS</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" id="checkedCheckbox4" name="developers" type="checkbox" value="Jaseem">
+              <label class="form-check-label text-muted fw-normal" for="checkedCheckbox4">Jaseem</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" id="checkedCheckbox5" name="developers" type="checkbox"
+                value="Shabeer OP">
+              <label class="form-check-label text-muted fw-normal" for="checkedCheckbox5">Shabeer OP</label>
+            </div>
+
+
+
+
+
+
+
+
+
+            <button id="submit-btn" class="btn btn-primary w-100 mt-4" type="submit">Add Project</button>
+
+          </form>
+        </div>
+      </div>
+      <!-- Login Meta -->
+      <p class="mt-3 text-center">Powered By <a href="https://vectorcrop.com/" target="_blank">VectorCrop.</a></p>
+
+    </div>
+  </div>
+  <!-- All JavaScript Files -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/internet-status.js"></script>
+  <script src="assets/js/dark-rtl.js"></script>
+  <!-- Password Strenght -->
+  <script src="assets/js/pswmeter.js"></script>
+  <script src="assets/js/active.js"></script>
+  <!-- PWA -->
+  <script src="assets/js/pwa.js"></script>
+
+  <script>
+    $("#submit-form").submit((e) => {
+      e.preventDefault();
+
+      // Replace button text with loader
+      $("#submit-btn").html('<div class="spinner-border spinner-border-sm" role="status"></div>');
+
+      // Serialize form data
+      let formData = $("#submit-form").serializeArray();
+
+      // Remove any fields you don't want to send (e.g., "date" or "timestamp")
+      formData = formData.filter(item => item.name !== "date" && item.name !== "timestamp");
+
+      $.ajax({
+        url: "https://script.google.com/macros/s/AKfycbwk-_gB0eT8am0iGsLOqTvM5ROrUD4GKGdll9qJzNDXJiRfPmC1oBsCZEb1ua5i4E1vQA/exec",
+        data: formData,
+        method: "post",
+        success: function (response) {
+          alert("Project Added Successfully!");
+          window.location.reload();
+          //window.location.href="https://google.com"
+        },
+        error: function (err) {
+          alert("Something Error");
+          // Restore button text
+          $("#submit-btn").html("Add Project");
+        }
+      });
+
+      // Reset button text after 3 seconds
+      setTimeout(function () {
+        $("#submit-btn").html("Add Project");
+      }, 3000);
+    });
+  </script>
+
+
+</body>
+
+</html>
